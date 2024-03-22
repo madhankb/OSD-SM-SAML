@@ -19,7 +19,7 @@ A managed service OpenSearch domain with SAML authentication enabled. [Reference
 8. Post container restart you can access the self-managed OpenSearch Dashboards by hitting the EC2 endpoint with port 5601. By doing so, you can conveniently view and interact with all the saved objects in accordance with the Fine-Grained Access Control settings and SAML authentication.
 *Note: When using docker in EC2 instance, the self-managed OpenSearch Dashboards cannot be accessed over the internet. It is only accessible by machines within the same VPC.*
 
-## SAML Referece Links
+## SAML Reference Links
 https://docs.aws.amazon.com/opensearch-service/latest/developerguide/saml.html
 https://opensearch.org/docs/latest/security/authentication-backends/saml/
 https://www.youtube.com/watch?v=TgnHBz4i63M
