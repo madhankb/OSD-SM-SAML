@@ -6,8 +6,8 @@ A managed service OpenSearch domain with SAML authentication enabled. [Reference
 
 ## Steps to spin up a self-managed dashboards
 1. Create an EC2 instance within the identical VPC where the managed service OpenSearch domain is operating to run the self-managed dashboards and capture its endpoint.
-2. Create a new Application in your `IDP` with the self-managed dashboards endpoint which would generate a new `IDP metadata`
-3. Copy the new `IDP metadata` of the newly created application and paste it into the IDP metadata text box found in the `Configure identity provider (IdP)` section within the security configuration tab of the managed service domain in aws console
+2. Create a new Application in your `IDP` with the self-managed dashboards endpoint which would generate a new IDP metadata
+3. Copy the new IDP metadata of the newly created application and paste it into the IDP metadata text box found in the `Configure identity provider (IdP)` section within the security configuration tab of the managed service domain in aws console
 4. Replace the self-managed dashboards url in the security configuration file with the self-managed dashboards’ endpoint. The purpose of this is to guarantee that after the user is authenticated in IDP, the redirection occurs to the self-managed dashboards instead of the managed service dashboards.
 
 *Note: Customers do not have access to modify the security configuration file due to security reasons hence raise a support ticket to request a change to the self-managed URL endpoint
