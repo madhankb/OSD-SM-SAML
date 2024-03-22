@@ -12,7 +12,7 @@ A managed service OpenSearch domain with SAML authentication enabled. [Reference
 
 > [!IMPORTANT]
 > Customers do not have access to modify the security configuration file due to security reasons hence raise a support ticket to request a change to the self-managed URL endpoint
-[Refer here](https://opensearch.org/docs/latest/security/authentication-backends/saml/#minimal-configuration-example). By running the below API call, customer can validate the `kibana_url` changes in security configuration file. ```_opendistro/_security/api/securityconfig```
+[Refer here](https://opensearch.org/docs/latest/security/authentication-backends/saml/#minimal-configuration-example). By running this API call ```_opendistro/_security/api/securityconfig```, customer can validate the `kibana_url` changes in security configuration file.
 
 5. Install docker and its dependencies on the EC2 instance
 6. Use the attched `docker-compose.yml` file and run the self-managed opensearch dashboards
