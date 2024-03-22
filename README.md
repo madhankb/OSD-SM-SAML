@@ -20,8 +20,8 @@ A managed service OpenSearch domain with SAML authentication enabled. [Reference
 *Note: When using docker in EC2 instance, the self-managed OpenSearch Dashboards cannot be accessed over the internet. It is only accessible by machines within the same VPC.*
 
 ## SAML Reference Links
-https://docs.aws.amazon.com/opensearch-service/latest/developerguide/saml.html
-https://opensearch.org/docs/latest/security/authentication-backends/saml/
-https://www.youtube.com/watch?v=TgnHBz4i63M
-https://www.youtube.com/watch?v=liJO_jOiIF8
-https://opster.com/guides/opensearch/opensearch-security/how-to-set-up-single-sign-on-using-saml/
+*https://docs.aws.amazon.com/opensearch-service/latest/developerguide/saml.html
+*https://opensearch.org/docs/latest/security/authentication-backends/saml/
+*https://www.youtube.com/watch?v=TgnHBz4i63M
+*https://www.youtube.com/watch?v=liJO_jOiIF8
+*https://opster.com/guides/opensearch/opensearch-security/how-to-set-up-single-sign-on-using-saml/
