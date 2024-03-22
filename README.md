@@ -18,7 +18,8 @@ A managed service OpenSearch domain with SAML authentication enabled. [Reference
 6. Use the attched `docker-compose.yml` file and run the self-managed opensearch dashboards
 7. After the container is up and running, access it by using the command `docker exec -it <CONTAINER ID> bash` and then modify the `opensearch_dashboards.yml` file by adding the SAML specific attributes. Once the modifications are made, restart the container using `docker restart <CONTAINER ID>`. Find the sample `opensearch_dashboards.yml` file. [Refer here](https://opensearch.org/docs/latest/security/authentication-backends/saml/#opensearch-dashboards-configuration)
 8. Post container restart you can access the self-managed OpenSearch Dashboards by hitting the EC2 endpoint with port 5601. By doing so, you can conveniently view and interact with all the saved objects in accordance with the Fine-Grained Access Control settings and SAML authentication.
-*Note: When using docker in EC2 instance, the self-managed OpenSearch Dashboards cannot be accessed over the internet. It is only accessible by machines within the same VPC.*
+> [!CAUTION]
+> When using docker in EC2 instance, the self-managed OpenSearch Dashboards cannot be accessed over the internet. It is only accessible by machines within the same VPC.*
 
 ## SAML Reference Links
 * https://docs.aws.amazon.com/opensearch-service/latest/developerguide/saml.html
