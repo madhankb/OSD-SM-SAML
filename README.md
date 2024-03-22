@@ -18,7 +18,7 @@ An AWS managed OpenSearch domain with SAML authentication enabled. [Reference he
 6. Use the attched `docker-compose.yml` file and run the self-managed opensearch dashboards
 7. After the container is up and running, access it by using the command `docker exec -it <CONTAINER ID> bash` and then modify the `opensearch_dashboards.yml` file by adding the SAML specific attributes. Once the modifications are made, restart the container using `docker restart <CONTAINER ID>`. Find the sample `opensearch_dashboards.yml` attached for reference. [Additional Reference here](https://opensearch.org/docs/latest/security/authentication-backends/saml/#opensearch-dashboards-configuration)
 8. Post container restart you can access the self-managed OpenSearch Dashboards by hitting the EC2 endpoint with port 5601. By doing so, you can conveniently view and interact with all the saved objects in accordance with the Fine-Grained Access Control settings and SAML authentication.
-> [!IMPORTANT]
+> [!CAUTION]
 > If the endpoint is transitioned to self-managed dashboards and the customer intends to revert to the managed service dashboards endpoint, they must repeat the same procedure, which involves altering the kibana_url in the security configuration file back to the managed service dashboards endpoint. Until this change is made, the managed service dashboards endpoint will remain inaccessible.
 
 > [!WARNING]
