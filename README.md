@@ -10,7 +10,7 @@ A managed service OpenSearch domain with SAML authentication enabled. [Reference
 3. Copy the new `IDP metadata` of the newly created application and paste it into the IDP metadata text box found in the `Configure identity provider (IdP)` section within the security configuration tab of the managed service domain in aws console
 4. Replace the self-managed dashboards url in the security configuration file with the self-managed dashboards’ endpoint. The purpose of this is to guarantee that after the user is authenticated in IDP, the redirection occurs to the self-managed dashboards instead of the managed service dashboards.
 
-*Note: Customers do not have access to modify the security configuration file due to security reasons hence raise a support ticket to request a change to the self-managed URL endpoint.
+*Note: Customers do not have access to modify the security configuration file due to security reasons hence raise a support ticket to request a change to the self-managed URL endpoint
 [Refer here](https://opensearch.org/docs/latest/security/authentication-backends/saml/#minimal-configuration-example). By running the below API call, customer can validate the `kibana_url` changes in security configuration file. `_opendistro/_security/api/securityconfig`*
 
 5. Install docker and its dependencies on the EC2 instance
