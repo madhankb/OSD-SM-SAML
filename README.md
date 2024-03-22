@@ -21,7 +21,7 @@ An AWS managed OpenSearch domain with SAML authentication enabled. [Reference he
 > [!CAUTION]
 > If the endpoint is transitioned to self-managed dashboards and the customer intends to revert to the managed service dashboards endpoint, they must repeat the same procedure, which involves altering the kibana_url in the security configuration file back to the managed service dashboards endpoint. Until this change is made, the managed service dashboards endpoint will remain inaccessible.
 
-> [!WARNING]
+> [!NOTE]
 > When using docker in EC2 instance, the self-managed OpenSearch Dashboards cannot be accessed over the internet. It is only accessible by machines within the same VPC.
 
 ## SAML Reference Links
