@@ -1,7 +1,7 @@
 # Guide to setup self-managed dashboards in EC2 hosted container
 
 ## Prerequisite
-A AWS managed OpenSearch domain with SAML authentication enabled. [Reference here](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/saml.html
+An AWS managed OpenSearch domain with SAML authentication enabled. [Reference here](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/saml.html
 )
 
 ## Steps to spin up a self-managed dashboards
