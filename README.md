@@ -4,6 +4,12 @@
 An AWS managed OpenSearch domain with SAML authentication enabled. [Reference here](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/saml.html
 )
 
+Always set up self-managed dashboards version [2.14.0](https://hub.docker.com/layers/opensearchproject/opensearch-dashboards/2.14.0/images/sha256-22692a567107d4d12418ce37c30953dc6975b98c18db82a09f200bb76cc797b4?context=explore) to disable the version check that is causing connectivity issues during B/G. Once version 2.14.0 is configured, add the following setting to the `opensearch_dashboards.yml` file to ensure the version check is disabled.
+
+```
+opensearch.ignoreVersionMismatch: true
+```
+
 ## Steps to spin up a self-managed dashboards
 1. Create an EC2 instance within the identical VPC where the managed service OpenSearch domain is operating to run the self-managed dashboards and capture its endpoint.
 2. Create a new Application in your `IDP` with the self-managed dashboards endpoint which would generate a new IDP metadata
